@@ -1,0 +1,84 @@
+
+
+.bg1 {
+    background: #3c8a2e;
+}
+
+.bg {
+    background: url("../../assets/pngs/footer.png") no-repeat bottom right;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: -5px -8.20751px;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+.foot-links{
+    list-style: none;
+    padding: 0;
+}
+.foot-links li{
+    padding: 10px 0 0px;
+}
+.list li {
+    display: inline-block;
+    padding: 7px 12px;
+}
+.list li {
+    display: inline-block;
+    padding: 7px 12px;
+}
+
+.pi {
+    -ms-transform: skewY(20deg);
+    /* IE 9 */
+    -webkit-transform: skewY(20deg);
+    /* Safari 3-8 */
+    transform: skewY(20deg);
+}
+
+.pi-right {
+    -ms-transform: skewY(-15deg);
+    /* IE 9 */
+    -webkit-transform: skewY(-15deg);
+    /* Safari 3-8 */
+    transform: skewY(-15deg);
+}
+
+.txt-rght{
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+ul.nav-list.list a{
+    color: #000;
+}
+
+.footer-lower{
+    /* padding: 20px 0 0 0; */
+    /* margin-top: 5em; */
+}
+
+.footer-lower img{
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.footer-lower li{
+    padding: 7px 25px;
+    font-size: 0.9rem;
+}
+.foot-com{
+    margin-top: 2em;
+    bottom: 0;
+    right: 0;
+}
+.foot-com h6{
+    margin-left: 20%;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    font-weight: 400;
+}

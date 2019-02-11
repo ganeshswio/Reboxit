@@ -1,0 +1,70 @@
+.bg1 {
+    background: #3c8a2e;
+}
+
+
+.header-main {
+    background-color: #fefefe;
+}
+
+.header-main .brand-logo {
+    width: 100px
+}
+
+.header-main .brand-logo img {
+    width: 100%;
+    height: auto;
+}
+
+
+.poi {
+    cursor: pointer;
+}
+.poi a{
+    color:white;
+    font-size: 16px;
+    /* font-family: Foundry Streling W01; */
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 13px 30px;
+}
+.rotate i {
+    transform: rotate(100deg);
+}
+
+.border-left a::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    bottom: 0;
+    border-left: 1px solid #fff;
+    top: 0;
+    left: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1px;
+}
+.border-left {
+    border: 0px !important;
+    position: relative;
+}
+.drag ul li:hover {
+    background-color: #4ca115;
+
+}
+
+.drag ul li a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 13px 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+.active {
+    background-color: #4ca115;
+}
+.poi {
+    cursor: pointer;
+   
+}

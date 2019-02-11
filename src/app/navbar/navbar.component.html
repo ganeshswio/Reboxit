@@ -1,0 +1,48 @@
+<div class="">
+    <div class="header-main">
+    <div class="container">
+      <div class="brand-logo">
+        <a routerLink="/landing"> <img src="../assets/images/Categories/logo.png"></a>
+      </div>
+    </div>
+  <nav class="navbar navbar-expand-sm navbar-light bg1 ">
+    <div class="container">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse  drag" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item poi">
+            <a class="nav-link" routerLink="/pricelist">Price List <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item poi">
+            <a class="nav-link" routerLink="/design">Book a Pickup</a>
+          </li>
+          <li class="nav-item poi">
+            <a class="nav-link" routerLink="/associate">Associates</a>
+          </li>
+          <li *ngIf="!userDetails" class="nav-item poi">
+            <a class="nav-link" routerLink="/design">Login</a>
+          </li>
+          <li *ngIf="userDetails" class="nav-item poi">
+            <a class="nav-link" routerLink="/myaccount"> My Account</a>
+          </li>
+          <li *ngIf="userDetails" class="nav-item poi">
+              <a class="nav-link" (click)="logout()"> Logout</a>
+          </li>
+          <li class="nav-item poi">
+            <a class="nav-link">Help</a>
+          </li>
+          <li class="nav-item poi border-left">
+              <a class="nav-link rotate"><i class="fa fa-phone"></i></a>
+            </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+</div>

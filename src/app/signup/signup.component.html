@@ -1,0 +1,110 @@
+<div class="main-height">
+  <!---Form Starts Here-->
+  <div class="bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-12"></div>
+        <div class="col-md-6 col-sm-6 col-xs-12 add">
+
+          <div class="row">
+            <div class="col-md-12">
+              <h1>Register As User</h1>
+            </div>
+          </div>
+
+          <!---Login Form starts here-->
+
+          <div class="">
+
+            <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="form-group form2 form-container">
+
+              <div class="form-group ">
+                <!-- <label for="exampleInputEmail1">Select Usertype</label> -->
+                <select formControlName="usertype" class="form-control" name="usertype" id="utype">
+                  <option selected value="0"> Type of User </option>
+                  <option value="House_hold "> House hold </option>
+                  <option value="Business"> Business </option>
+                  <option value="Education"> Education </option>
+                  <option value=" Corporate_Offices"> Corporate Offices </option>
+                  <option value="Others"> Others</option>
+                </select>
+
+              </div>
+              <div *ngIf="signupForm.get('usertype').hasError('required')  && signupForm.get('usertype').touched " class="cn" >
+                User Type is Required
+              </div>
+
+              <div class="form-group ">
+
+                <input type="text" formControlName="username" name="username" class="form-control form-control-sm"
+                  placeholder="Username" >
+              </div>
+              <div *ngIf="signupForm.get('username').hasError('required')  && signupForm.get('username').touched "
+                class="cn">
+               <span class="cc"> Username is required</span>
+              </div>
+
+           
+
+              <div class="form-group">
+
+                <input type="text" formControlName="email" name="email" class="form-control form-control-sm"
+                  placeholder="Email I'd">
+              </div>
+              <div *ngIf="signupForm.get('email').hasError('required')  && signupForm.get('email').touched " class="cn">
+                <span class="cc">Email is required</span>
+              </div>
+
+              <div class="form-group ">
+
+                  <input type="password" formControlName="password" name="password" class="form-control form-control-sm"
+                    placeholder="Password">
+                </div>
+
+                <div *ngIf="signupForm.get('password').hasError('required')  && signupForm.get('password').touched  "
+                  class="cn">
+                 <span class="cc"> password is required</span>
+                </div>
+                <div *ngIf="signupForm.get('password').hasError('password') " class="cn">
+                 <span class="cc"> Password must be 8 characters required</span>
+                </div>
+
+                <div class="form-group ">
+
+                    <input type="password" formControlName="cpassword" name="cpassword" class="form-control form-control-sm"
+                      placeholder="Confirm Password">
+                  </div>
+                  <div *ngIf="signupForm.get('cpassword').hasError('required')  && signupForm.get('cpassword').touched  "
+                  class="cn">
+                 <span class="cc"> password is required</span>
+                </div>
+                <div *ngIf="signupForm.get('cpassword').hasError('cpassword') " class="cn">
+                 <span class="cc"> Password must be 8 characters required</span>
+                </div>
+                  
+                  
+
+              <div class="form-group">
+
+                <input type="text" formControlName="phone" name="phone" class="form-control form-control-sm" id="exampleInputPassword1"
+                  placeholder="Phone Number">
+              </div>
+              <div *ngIf="signupForm.get('phone').hasError('required')  && signupForm.get('phone').touched " class="cn">
+               <span class="cc">  Phone Number is required</span>
+              </div>
+
+              <div class=""></div>
+
+              <button class="SignUpButton" type="submit" class="btn btn-success btn-block">Sign Up</button>
+              <div class="text-center btm-txt">
+                <p>Already have an account ? <span><a routerLink="/design" class="signUp" >LogIn</a></span></p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12"></div>
+      </div>
+
+    </div>
+  </div>
+</div>

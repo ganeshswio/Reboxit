@@ -1,0 +1,475 @@
+<div class="">
+
+  <div class="body-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 sec">
+          <h3>Personal Info:</h3>
+
+          <ul class="personal-info">
+            <li>
+              <label><strong>Name:</strong></label>
+              {{UserDetails.username}}
+            </li>
+
+            <li>
+              <label><strong>Address:</strong></label>
+              1-5-286/2/4/55
+            </li>
+
+            <li>
+              <label style="width:110px"><strong>Type Of User:</strong></label>
+                {{UserDetails.usertype.replace("_", " ")}}
+            </li>
+
+            <li>
+              <label><strong>Phone No:</strong></label>
+              +91-{{UserDetails.phone}}
+            </li>
+
+
+          </ul>
+
+          <p class="float-right"><a href="#">Edit</a></p>
+
+        </div>
+        <div class="col-md-6" id="accordion-style-1">
+          <h3 style="text-align:center">Present Order</h3>
+
+          <section>
+            <div class="row">
+
+              <div class="col-md-12 mx-auto">
+                <div class="accordion" id="accordionPresent">
+
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <div class="collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false"
+                        aria-controls="collapse1">
+                        <label class="bordered">Slot: 02-12-2019</label>
+                        <label class="bordered">Quantity: {{TotalQuantity}}Kg</label>
+                        <label>Price: Rs {{10 * TotalQuantity}}/-</label>
+                        <label class="last">View</label>
+                      </div>
+                    </div>
+
+                    <div id="collapse1" class="collapse  fade" aria-labelledby="headingOne" data-parent="#accordionPresent">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <div class="table-responsive">
+                              <table class="table borderless">
+                                <!-- <thead>
+                                  <th>
+                                    <h5>Paper</h5>
+                                  </th>
+                                </thead> -->
+
+                                <tbody>
+                                  <tr *ngFor="let item of cart">
+                                    <td>{{item.Name}}</td>
+                                    <td>{{item.Quantity}}</td>
+                                    <td>Rs {{item.Price * item.Quantity}}.00/-</td>
+                                  </tr>
+                                  <!-- <tr>
+                                    <td>Copper</td>
+                                    <td>10</td>
+                                    <td>25.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Pet Bottles</td>
+                                    <td>2</td>
+                                    <td>15.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Tetra packs</td>
+                                    <td>5</td>
+                                    <td>48.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>News Papers</td>
+                                    <td>7</td>
+                                    <td>56.00</td>
+                                  </tr> -->
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="download">
+                              <p><i class="fa fa-download" aria-hidden="true"></i></p>
+                              <p class="download-txt">Download Certificate</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+<!-- 
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <div class="collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false"
+                        aria-controls="collapse2">
+                        <label class="bordered">Slot: 02-12-2019</label>
+                        <label class="bordered">Quantity: 9Kg</label>
+                        <label>Price: Rs 45/-</label>
+                        <label class="last">View</label>
+                      </div>
+                    </div>
+
+                    <div id="collapse2" class="collapse  fade" aria-labelledby="headingOne" data-parent="#accordionPresent">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <div class="table-responsive">
+                              <table class="table borderless">
+                                <thead>
+                                  <th>
+                                    <h5>Paper</h5>
+                                  </th>
+                                </thead>
+
+                                <tbody>
+                                  <tr>
+                                    <td>Bottle</td>
+                                    <td>5</td>
+                                    <td>35.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Copper</td>
+                                    <td>10</td>
+                                    <td>25.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Pet Bottles</td>
+                                    <td>2</td>
+                                    <td>15.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Tetra packs</td>
+                                    <td>5</td>
+                                    <td>48.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>News Papers</td>
+                                    <td>7</td>
+                                    <td>56.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="download">
+                              <p><i class="fa fa-download" aria-hidden="true"></i></p>
+                              <p class="download-txt">Download Certificate</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+<!-- 
+
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <div class="collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false"
+                        aria-controls="collapse3">
+                        <label class="bordered">Slot: 02-12-2019</label>
+                        <label class="bordered">Quantity: 9Kg</label>
+                        <label>Price: Rs 45/-</label>
+                        <label class="last">View</label>
+                      </div>
+                    </div>
+
+                    <div id="collapse3" class="collapse  fade" aria-labelledby="headingOne" data-parent="#accordionPresent">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <div class="table-responsive">
+                              <table class="table borderless">
+                                <thead>
+                                  <th>
+                                    <h5>Paper</h5>
+                                  </th>
+                                </thead>
+
+                                <tbody>
+                                  <tr>
+                                    <td>Bottle</td>
+                                    <td>5</td>
+                                    <td>35.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Copper</td>
+                                    <td>10</td>
+                                    <td>25.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Pet Bottles</td>
+                                    <td>2</td>
+                                    <td>15.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Tetra packs</td>
+                                    <td>5</td>
+                                    <td>48.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>News Papers</td>
+                                    <td>7</td>
+                                    <td>56.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="download">
+                              <p><i class="fa fa-download" aria-hidden="true"></i></p>
+                              <p class="download-txt">Download Certificate</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </section><!-- present sectin ends here-->
+
+
+
+          <h3 _ngcontent-c1="" class="text-center text-capitalize">Previous Orders</h3>
+
+          <!-- <section>
+            <div class="row">
+
+              <div class="col-md-12 mx-auto">
+                <div class="accordion" id="accordionPrevious">
+
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <div class="collapsed" data-toggle="collapse" data-target="#previouscollapse1" aria-expanded="false"
+                        aria-controls="previouscollapse1">
+                        <label class="bordered">Slot: 02-12-2019</label>
+                        <label class="bordered">Quantity: 9Kg</label>
+                        <label>Price: Rs 45/-</label>
+                        <label class="last">View</label>
+                      </div>
+                    </div>
+
+                     <div id="previouscollapse1" class="collapse  fade" aria-labelledby="headingOne" data-parent="#accordionPrevious">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <div class="table-responsive">
+                              <table class="table borderless">
+                                <thead>
+                                  <th>
+                                    <h5>Paper</h5>
+                                  </th>
+                                </thead>
+
+                                <tbody>
+                                  <tr>
+                                    <td>Bottle</td>
+                                    <td>5</td>
+                                    <td>35.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Copper</td>
+                                    <td>10</td>
+                                    <td>25.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Pet Bottles</td>
+                                    <td>2</td>
+                                    <td>15.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Tetra packs</td>
+                                    <td>5</td>
+                                    <td>48.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>News Papers</td>
+                                    <td>7</td>
+                                    <td>56.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="download">
+                              <p><i class="fa fa-download" aria-hidden="true"></i></p>
+                              <p class="download-txt">Download Certificate</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <div class="collapsed" data-toggle="collapse" data-target="#previouscollapse2" aria-expanded="false"
+                        aria-controls="previouscollapse2">
+                        <label class="bordered">Slot: 02-12-2019</label>
+                        <label class="bordered">Quantity: 9Kg</label>
+                        <label>Price: Rs 45/-</label>
+                        <label class="last">View</label>
+                      </div>
+                    </div>
+
+                    <div id="previouscollapse2" class="collapse  fade" aria-labelledby="headingOne" data-parent="#accordionPrevious">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <div class="table-responsive">
+                              <table class="table borderless">
+                                <thead>
+                                  <th>
+                                    <h5>Paper</h5>
+                                  </th>
+                                </thead>
+
+                                <tbody>
+                                  <tr>
+                                    <td>Bottle</td>
+                                    <td>5</td>
+                                    <td>35.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Copper</td>
+                                    <td>10</td>
+                                    <td>25.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Pet Bottles</td>
+                                    <td>2</td>
+                                    <td>15.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Tetra packs</td>
+                                    <td>5</td>
+                                    <td>48.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>News Papers</td>
+                                    <td>7</td>
+                                    <td>56.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="download">
+                              <p><i class="fa fa-download" aria-hidden="true"></i></p>
+                              <p class="download-txt">Download Certificate</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <div class="collapsed" data-toggle="collapse" data-target="#previouscollapse3" aria-expanded="false"
+                        aria-controls="previouscollapse3">
+                        <label class="bordered">Slot: 02-12-2019</label>
+                        <label class="bordered">Quantity: 9Kg</label>
+                        <label>Price: Rs 45/-</label>
+                        <label class="last">View</label>
+                      </div>
+                    </div>
+
+                    <div id="previouscollapse3" class="collapse  fade" aria-labelledby="headingOne" data-parent="#accordionPrevious">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-md-9">
+                            <div class="table-responsive">
+                              <table class="table borderless">
+                                <thead>
+                                  <th>
+                                    <h5>Paper</h5>
+                                  </th>
+                                </thead>
+
+                                <tbody>
+                                  <tr>
+                                    <td>Bottle</td>
+                                    <td>5</td>
+                                    <td>35.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Copper</td>
+                                    <td>10</td>
+                                    <td>25.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Pet Bottles</td>
+                                    <td>2</td>
+                                    <td>15.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Tetra packs</td>
+                                    <td>5</td>
+                                    <td>48.00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>News Papers</td>
+                                    <td>7</td>
+                                    <td>56.00</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="download">
+                              <p><i class="fa fa-download" aria-hidden="true"></i></p>
+                              <p class="download-txt">Download Certificate</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> -->
+          <!--sectin ends here-->
+          <h4 style="text-align:center; margin-top: 2em">No Previous Orders</h4>
+        </div>
+        <!--Right section starts here-->
+        <div class="col-md-3 sec text-center">
+          <h5>Trees Saved</h5>
+          <!-- <p class="count">501</p> -->
+          <span class="tree-img"></span>
+          <span class="tree-img"></span>
+          <span class="tree-img"></span>
+          <span class="tree-img"></span>
+        </div>
+        <!--Right section ends here-->
+      </div>
+    </div>
+  </div>
+
+</div>
