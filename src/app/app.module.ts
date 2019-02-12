@@ -50,6 +50,8 @@ import { SignupadminComponent } from './signupadmin/signupadmin.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WaitingComponent } from './waiting/waiting.component';
+import { SatComponent } from './sat/sat.component';
+import { SatloginComponent } from './satlogin/satlogin.component';
 
 // routing starts here
 
@@ -81,7 +83,9 @@ const routes  : Routes =[
   {path:'adminaggrereqrec',component:AdminaggrereqrecComponent},
   {path:'adminrec',component:AdminrecComponent},
   {path:'addlocation',component:AddlocationComponent},
-  {path:'signupadmin',component:SignupadminComponent}
+  {path:'signupadmin',component:SignupadminComponent},
+  {path:'sat',component:SatComponent},
+  {path:'satlogin',component:SatloginComponent}
 ];
 
 
@@ -124,6 +128,8 @@ const routes  : Routes =[
     FooterComponent,
     NavbarComponent,
     WaitingComponent,
+    SatComponent,
+    SatloginComponent,
   ],
   imports: [
     BrowserModule,
