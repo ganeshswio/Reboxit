@@ -37,8 +37,8 @@
             <div *ngIf="loginForm.get('email').hasError('required') && loginForm.get('email').touched" class="cn" >
              <span class="cc"> Email is required</span>
             </div>
-            <div *ngIf="loginForm.get('email').hasError('email') " class="alert alert-danger">
-              Email is invalid
+            <div *ngIf="loginForm.get('email').hasError('email') " class="cn">
+            <span class="cc">  Email is invalid</span>
             </div>
             <div class="form-group">
 
@@ -48,8 +48,8 @@
             <div *ngIf="loginForm.get('password').hasError('required') && loginForm.get('password').touched" class="cn">
               <span class="cc">Password required</span>
             </div>
-            <div *ngIf="loginForm.get('password').hasError('minlength')  " class="alert alert-danger">
-              Password must be 8 characters
+            <div *ngIf="loginForm.get('password').hasError('minlength')  " class="cn">
+             <span class="cc"> Password must be 8 characters</span>
             </div>
 
 

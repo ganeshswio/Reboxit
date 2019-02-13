@@ -1,3 +1,36 @@
+/* form */
+.form-group input, .form-group select {
+    padding: 0.5rem;
+    border: 1px solid #f3ebeb;
+    border-radius: 2px;
+     color: white;
+    font-size: 16px;
+    height: 42px;
+}
+.form-container {
+    border: 1px solid white;
+    padding: 50px 60px;
+    margin-top: 15px;
+   
+}
+
+/* .form-group[_ngcontent-c1] select[_ngcontent-c1] {
+   
+    
+   
+} */
+.form-group select {
+  
+    color: rgb(105, 104, 104);
+   
+}
+/* .form2 {
+    border: 1px solid;
+    padding: 50px 60px;
+    margin-top: 30px;
+    background: #fff;
+} */
+
 /* logo && navigation*/
 
 .main-height {
@@ -17,12 +50,7 @@
     background: #3d882f;
 }
 
-.form2 {
-    border: 1px solid;
-    padding: 50px 60px;
-    margin-top: 30px;
-    background: #fff;
-}
+
 
 .poi {
     cursor: pointer;
@@ -112,12 +140,7 @@ h1 {
     padding: 36px 0 0 0;
 }
 
-.form-container {
-    border: 1px solid;
-    padding: 50px 60px;
-    margin-top: 15px;
-    background: rgba(255, 255, 255, 0.8);
-}
+
 
 input::placeholder{
     color: gray;

@@ -55,6 +55,8 @@ import { SatloginComponent } from './satlogin/satlogin.component';
 import { SatnavComponent } from './satnav/satnav.component';
 import { WardwiseComponent } from './wardwise/wardwise.component';
 import { MasterdataComponent } from './masterdata/masterdata.component';
+import { JournyComponent } from './journy/journy.component';
+import { ConformComponent } from './conform/conform.component';
 
 // routing starts here
 
@@ -90,7 +92,8 @@ const routes  : Routes =[
   {path:'sat',component:SatComponent},
   {path:'satlogin',component:SatloginComponent},
   {path:'wardwise',component: WardwiseComponent},
-  {path:'master',component: MasterdataComponent}
+  {path:'master',component: MasterdataComponent},
+  {path:'conform',component:ConformComponent}
 ];
 
 
@@ -138,6 +141,8 @@ const routes  : Routes =[
     SatnavComponent,
     WardwiseComponent,
     MasterdataComponent,
+    JournyComponent,
+    ConformComponent,
   ],
   imports: [
     BrowserModule,

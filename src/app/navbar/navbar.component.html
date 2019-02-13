@@ -34,6 +34,10 @@
           <li *ngIf="userDetails" class="nav-item poi">
             <a class="nav-link" routerLink="/myaccount"> My Account</a>
           </li>
+          <li *ngIf="!userDetails" class="nav-item poi">
+              <a class="nav-link" routerLink="/cart"> <i class="fas fa-shopping-cart"></i></a>
+          </li>
+          
           <li *ngIf="userDetails" class="nav-item poi">
               <a class="nav-link" (click)="logout()"> Logout</a>
           </li>
