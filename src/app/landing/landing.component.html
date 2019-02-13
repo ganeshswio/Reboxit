@@ -1,4 +1,7 @@
 <div class="">
+  <!-- navbar -->
+ <app-navbar></app-navbar>
+  <!-- end -->
 
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -28,7 +31,26 @@
             <img src="../../assets/pngs/land.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <div class="position-relative">
+
+              <img class="img-fluid" src="../../assets/login/newone.jpg" alt="Chania">
+              <div class="txt-img">
+                <!-- <p class="dd first">Don't dirty it in</p>
+               <span> <p class="second">the  FIRST PLACE</p></span>
+                <h1 class="third"><b>LET'S RECYCLE</b> now</h1> -->
+                <p class="ll"> <span style="padding:0 13px 0 0;"> Don't dirty it in </span> <br> <span class="dd">  the FIRST PLACE</span> <br> <span style="padding: 0 0 0 72px;"><b>LET'S RECYCLE</b> now</span></p>
+              </div>
+          
+          
+              <div class="position-absolute state3">
+                <button class="btn btn-outline-secondary pad">
+                  <a routerLink="/design" class="a" style="color:white;text-decoration: none;">Login</a></button>
+              </div>
+              <div class="position-absolute state4">
+                <button class="btn btn-outline-secondary pad">
+                  <a routerLink="/signup" style="color:white;text-decoration: none;">Signup</a></button>
+              </div>
+            </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">

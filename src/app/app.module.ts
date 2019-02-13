@@ -52,6 +52,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { WaitingComponent } from './waiting/waiting.component';
 import { SatComponent } from './sat/sat.component';
 import { SatloginComponent } from './satlogin/satlogin.component';
+import { SatnavComponent } from './satnav/satnav.component';
+import { WardwiseComponent } from './wardwise/wardwise.component';
+import { MasterdataComponent } from './masterdata/masterdata.component';
 
 // routing starts here
 
@@ -85,7 +88,9 @@ const routes  : Routes =[
   {path:'addlocation',component:AddlocationComponent},
   {path:'signupadmin',component:SignupadminComponent},
   {path:'sat',component:SatComponent},
-  {path:'satlogin',component:SatloginComponent}
+  {path:'satlogin',component:SatloginComponent},
+  {path:'wardwise',component: WardwiseComponent},
+  {path:'master',component: MasterdataComponent}
 ];
 
 
@@ -130,6 +135,9 @@ const routes  : Routes =[
     WaitingComponent,
     SatComponent,
     SatloginComponent,
+    SatnavComponent,
+    WardwiseComponent,
+    MasterdataComponent,
   ],
   imports: [
     BrowserModule,

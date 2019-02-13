@@ -1,6 +1,6 @@
 <div class="sticky-top" >
     <div class="header-main">
-    <div class="container">
+    <div class="container-fluid">
       <div class="brand-logo" style="display:inline-block;">
         <a routerLink="/landing"> <img src="../assets/images/Categories/logo.png"></a>
       </div>
@@ -10,7 +10,7 @@
     
     </div>
   <nav class="navbar navbar-expand-sm navbar-light bg1 " >
-    <div class="container">
+    <div class="container-fluid">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,27 +19,18 @@
 
       <div class="collapse navbar-collapse  drag" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto ">
+          
           <li class="nav-item poi">
-            <a class="nav-link" routerLink="/pricelist">Price List <span class="sr-only">(current)</span></a>
+            <a class="nav-link" routerLink="/sat">SatWise</a>
           </li>
           <li class="nav-item poi">
-            <a class="nav-link" routerLink="/design">Book a Pickup</a>
-          </li>
-          <li class="nav-item poi">
-            <a class="nav-link" routerLink="/associate">Associates</a>
+            <a class="nav-link" routerLink="/wardwise">WardWise</a>
           </li>
           <li *ngIf="!userDetails" class="nav-item poi">
-            <a class="nav-link" routerLink="/design">Login</a>
+            <a class="nav-link" routerLink="/master">MasterData</a>
           </li>
-          <li *ngIf="userDetails" class="nav-item poi">
-            <a class="nav-link" routerLink="/myaccount"> My Account</a>
-          </li>
-          <li *ngIf="userDetails" class="nav-item poi">
-              <a class="nav-link" (click)="logout()"> Logout</a>
-          </li>
-          <li class="nav-item poi">
-            <a class="nav-link">Help</a>
-          </li>
+         
+         
           <li class="nav-item poi">
               <a class="nav-link"  routerLink="/satlogin">Ghmc</a>
             </li>

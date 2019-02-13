@@ -1,3 +1,9 @@
+
+
+
+
+
+
 @keyframes fadeInUp {
     from { 
       opacity: 0;
@@ -307,6 +313,15 @@ h1{
     border: none;
     padding: 15px;
     text-align: center;
+    box-shadow: 0 0 0 5px rgba(#fff,.4) , 0 0 0 10px  #f05f75;
+    transition: all 300ms ease-in-out;
+    
+    
+}
+.align:hover  {
+   transform: translate(0,-7px);
+   box-shadow: 0 0 0 5px rgba(#fff,.4) , 0 0 0 10px  #181717;
+  
 }
 
 .align img {
